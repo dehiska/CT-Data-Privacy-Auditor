@@ -1,0 +1,2 @@
+[server]
+maxUploadSize = 1024   # 1 GB max upload (default is 200 MB)

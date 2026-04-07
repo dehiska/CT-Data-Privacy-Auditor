@@ -69,12 +69,23 @@ st.sidebar.divider()
 
 # --- File uploaders ---
 st.sidebar.subheader("Upload Business Files")
+if use_ct_law:
+    st.sidebar.caption(
+        "CT law PDFs are auto-loaded for rule extraction. "
+        "Upload the **business policy** you want to audit for compliance, "
+        "or leave blank to audit the CT law PDFs themselves."
+    )
+else:
+    st.sidebar.caption(
+        "Upload the **law / regulation** and the **business policy** to audit."
+    )
 
 uploaded_policies = st.sidebar.file_uploader(
-    "Additional Policy Files (.txt or .pdf)" if use_ct_law else "Privacy Policy (.txt or .pdf)",
+    "Business Privacy Policy (.txt or .pdf) — optional if CT is on"
+    if use_ct_law else "Privacy Policy (.txt or .pdf)",
     type=["txt", "pdf"], key="policy",
     accept_multiple_files=True,
-    help="CT law PDFs are already included." if use_ct_law else None,
+    help="Upload a business privacy policy to audit. If CT is toggled on and nothing is uploaded, the CT law PDFs are used." if use_ct_law else None,
 )
 uploaded_data = st.sidebar.file_uploader(
     "Business Data (.csv)", type=["csv"], key="data"
@@ -147,8 +158,8 @@ if run_clicked:
 
     if not has_files:
         if not has_policy:
-            st.error("Please enable a jurisdiction toggle or upload policy files.")
-        else:
+            st.error("Please enable a jurisdiction toggle, upload policy files, or check 'Use sample data'.")
+        elif not has_data:
             st.error("Please upload a business data CSV file, or check 'Use sample data'.")
     else:
         # Save uploaded files to temp dir (or use sample paths)
@@ -162,32 +173,35 @@ if run_clicked:
 
             from PyPDF2 import PdfReader
             import io
-            combined_text = []
 
-            # Auto-include CT law PDFs when toggle is on
-            if use_ct_law and CT_LAW_DIR.exists():
+            # --- Build the policy text to audit ---
+            policy_text_parts = []
+
+            # If CT toggle is on and no separate policy uploaded,
+            # use the CT law PDFs as the policy to audit.
+            if use_ct_law and not uploaded_policies and CT_LAW_DIR.exists():
                 for pdf_file in sorted(CT_LAW_DIR.glob("*.pdf")):
                     try:
                         reader = PdfReader(str(pdf_file))
-                        combined_text.append(
+                        policy_text_parts.append(
                             "\n".join(page.extract_text() or "" for page in reader.pages)
                         )
                     except Exception:
                         pass  # Skip unreadable PDFs
 
-            # Add any user-uploaded policy files on top
+            # User-uploaded business policy (overrides CT law as policy)
             if uploaded_policies:
                 for pf in uploaded_policies:
                     if pf.name.lower().endswith(".pdf"):
                         reader = PdfReader(io.BytesIO(pf.getvalue()))
-                        combined_text.append(
+                        policy_text_parts.append(
                             "\n".join(page.extract_text() or "" for page in reader.pages)
                         )
                     else:
-                        combined_text.append(pf.getvalue().decode("utf-8", errors="replace"))
+                        policy_text_parts.append(pf.getvalue().decode("utf-8", errors="replace"))
 
             Path(policy_path).write_text(
-                "\n\n--- Next Document ---\n\n".join(combined_text), encoding="utf-8"
+                "\n\n--- Next Document ---\n\n".join(policy_text_parts), encoding="utf-8"
             )
 
             data_paths = [str(Path(tmp) / "data.csv")]
