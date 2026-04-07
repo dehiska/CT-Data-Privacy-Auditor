@@ -1,0 +1,49 @@
+ACME CORPORATION PRIVACY POLICY
+Effective Date: January 1, 2024
+
+1. INTRODUCTION
+ACME Corporation ("we", "us", "our") respects the privacy of our customers.
+This policy describes how we collect, use, and share personal data.
+
+2. DATA WE COLLECT
+We collect the following categories of personal data:
+- Contact information (name, email, phone, address)
+- Date of birth
+- Account and transaction history
+- Health-related data for wellness program participants
+- Device and browser information
+
+3. HOW WE USE YOUR DATA
+We use personal data for:
+- Providing and improving our services
+- Processing transactions
+- Marketing and promotional communications
+- Analytics and profiling to personalize your experience
+- Sharing with trusted third-party partners
+
+4. YOUR RIGHTS
+(a) Right to Access: You may request a copy of the personal data we hold about you.
+    To submit a request, email privacy@acmecorp.example.com.
+(b) Right to Correction: If your data is inaccurate, you may request a correction.
+
+5. DATA RETENTION
+We retain personal data for as long as necessary to fulfill the purposes described
+in this policy, or as required by law.
+
+6. SECURITY
+We implement reasonable security measures to protect your personal data from
+unauthorized access, disclosure, or destruction.
+
+7. CHILDREN'S PRIVACY
+Our services are not directed to individuals under 16. We do not knowingly
+collect data from children under 16.
+
+8. CHANGES TO THIS POLICY
+We may update this policy from time to time. We will notify you of material
+changes by posting the updated policy on our website.
+
+9. CONTACT US
+For questions about this policy, contact us at:
+Email: privacy@acmecorp.example.com
+Phone: 860-555-0000
+Address: 100 Corporate Plaza, Hartford, CT 06103

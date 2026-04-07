@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,phone,address,city,state,zip,date_of_birth,diagnosis,treatment_plan,account_status
+C001,John,Smith,john.smith@email.com,860-555-0101,123 Main St,Hartford,CT,06103,03/15/1985,Hypertension,Medication therapy,Active
+C002,Mary,Johnson,mary.j@email.com,203-555-0202,456 Oak Ave,New Haven,CT,06510,07/22/1990,,, Active
+C003,Robert,Williams,r.williams@email.com,860-555-0303,789 Elm St,Stamford,CT,06901,11/30/1978,Diabetes Type 2,Insulin management,Active
+C004,Patricia,Brown,p.brown@email.com,475-555-0404,321 Cedar Ln,Bridgeport,CT,06601,05/18/1992,Anxiety disorder,Cognitive behavioral therapy,Active
+C005,James,Garcia,j.garcia@email.com,860-555-0505,654 Park Rd,Waterbury,CT,06702,09/04/1988,,,Inactive
+C006,Jennifer,Miller,jen.miller@email.com,203-555-0606,987 Maple Dr,Norwalk,CT,06850,02/28/1995,Chronic back pain,Physical therapy,Active
+C007,Michael,Davis,m.davis@email.com,860-555-0707,147 Pine St,Hartford,CT,06105,12/10/1983,,,Active
+C008,Linda,Rodriguez,l.rod@email.com,475-555-0808,258 Birch Way,Danbury,CT,06810,06/14/1991,Depression,Medication and counseling,Active
+C009,David,Martinez,d.martinez@email.com,203-555-0909,369 Spruce Ct,Milford,CT,06460,08/25/1986,,,Active
+C010,Elizabeth,Wilson,e.wilson@email.com,860-555-1010,741 Walnut St,Bristol,CT,06010,01/07/1993,Asthma,Inhaler therapy,Active

@@ -1,0 +1,13 @@
+request_id,customer_id,request_type,request_date,response_date,status
+R001,C001,access,2024-06-01,2024-06-15,completed
+R002,C003,delete,2024-06-10,2024-07-20,completed
+R003,C005,opt-out,2024-07-01,2024-07-10,completed
+R004,C002,access,2024-07-15,2024-09-20,completed
+R005,C004,correct,2024-08-01,2024-08-25,completed
+R006,C006,delete,2024-08-15,2024-11-30,completed
+R007,C008,access,2024-09-01,2024-09-30,completed
+R008,C010,opt-out,2024-09-15,2024-10-01,completed
+R009,C007,appeal,2024-10-01,2025-01-15,completed
+R010,C009,access,2024-10-15,2024-11-10,completed
+R011,C001,portability,2024-11-01,2024-12-20,completed
+R012,C003,access,2024-11-15,2024-12-01,completed

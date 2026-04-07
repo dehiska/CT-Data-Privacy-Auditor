@@ -1,0 +1,41 @@
+ACME Corp Privacy Policy
+Last Updated: January 15, 2025
+
+1. INTRODUCTION
+ACME Corp ("we", "us", "our") respects your privacy. This policy describes how we collect, use, and share your personal data.
+
+2. DATA WE COLLECT
+We collect the following categories of personal data:
+- Name and contact information (email address, phone number, mailing address)
+- Account credentials
+- Transaction and purchase history
+- Device information and IP addresses
+- Usage data and analytics
+
+3. HOW WE USE YOUR DATA
+We use personal data to:
+- Provide and improve our services
+- Process transactions
+- Send marketing communications
+- Comply with legal obligations
+- Conduct analytics and research
+
+4. DATA SHARING
+We may share your data with:
+- Service providers who assist in our operations
+- Business partners for joint marketing
+- Law enforcement when required by law
+
+5. YOUR RIGHTS
+You have the right to:
+- Access the personal data we hold about you
+- Request correction of inaccurate personal data
+
+6. DATA RETENTION
+We retain personal data for as long as necessary to fulfill the purposes described in this policy.
+
+7. SECURITY
+We implement reasonable security measures to protect your personal data.
+
+8. CONTACT US
+For questions about this policy, contact us at privacy@acmecorp.example.com.

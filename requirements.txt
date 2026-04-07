@@ -1,0 +1,25 @@
+# Anthropic Agent SDK & API
+claude-agent-sdk
+anthropic
+mcp
+
+# PDF Processing
+PyPDF2
+
+# NLP & ML
+spacy
+sentence-transformers
+scikit-learn
+joblib
+
+# Data Processing
+pandas
+
+# Dashboard
+streamlit
+
+# Test Data Generation
+faker
+
+# Environment
+python-dotenv
